@@ -1,51 +1,58 @@
 @import url("https://fonts.googleapis.com/css?family=Ubuntu|Spectral");
 
 body {
+  background-color: honeydew;
 }
 
 .container {
   max-width: 1024px;
   min-height: 600px;
-  margin: 10px auto 0 auto;
+  margin: 5px auto 0 auto;
+  padding-top: 15px;
   background: cornflowerblue;
 }
 
 header {
+  margin: 0 -25px;
+  box-shadow: 5px 5px honeydew;
 }
 
 header h1 {
   font-family: "Spectral", serif;
   background: deeppink;
   margin: 0 auto;
-  text-align: center;
+  padding-right: 10px;
+  text-align: right;
 }
 
 nav {
-  width: 100%;
   display: flex;
-  flex-flow: row wrap;
   justify-content: flex-start;
-  background: skyblue;
+  box-sizing: border-box;
+  background: darkturquoise;
 }
 
 nav ul {
   list-style-type: none;
+  margin: 0;
 }
 
 nav li {
   float: left;
+  padding: 0 5px;
 }
 
 nav li a {
   font-family: "Spectral", serif;
-  padding: 1em;
-  margin: auto;
+  padding: 14px 16px;
   text-decoration: none;
   display: block;
   color: navy;
 }
 
-nav li a:hover {
+nav li a:hover, .active-page {
+  margin-top: -2px;
+  border-top: 2px solid black;
   background: deepskyblue;
 }
 
