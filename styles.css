@@ -6,9 +6,10 @@ body {
 
 .container {
   max-width: 1024px;
-  min-height: 600px;
+  min-height: 100px;
   margin: 5px auto 0 auto;
   padding-top: 15px;
+  padding-bottom: 15px;
   background: cornflowerblue;
 }
 
@@ -18,7 +19,7 @@ header {
 }
 
 header h1 {
-  font-family: "Spectral", serif;
+  font-family: "Spectral", sans-serif;
   background: deeppink;
   margin: 0 auto;
   padding-right: 10px;
@@ -43,7 +44,7 @@ nav li {
 }
 
 nav li a {
-  font-family: "Spectral", serif;
+  font-family: "Ubuntu", sans-serif;
   padding: 14px 16px;
   text-decoration: none;
   display: block;
@@ -56,6 +57,33 @@ nav li a:hover, .active-page {
   background: deepskyblue;
 }
 
+.content-box {
+  height: 100%;
+  padding: 10px;
+  margin: 0.5em;
+  box-sizing: border-box;
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.dummy-content {
+  background-color: black;
+  width: 75px;
+  height: 75px;
+  margin: 5px;
+}
+
+footer {
+  background: deeppink;
+  font-family: "Ubuntu", sans-serif;
+  height: 49px;
+  margin: 0 -25px;
+}
+
+footer p {
+  text-align: center;
+  padding: 1em;
+}
 .details_format {
   padding: 5%;
   margin: 0px;
