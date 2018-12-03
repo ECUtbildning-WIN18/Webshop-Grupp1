@@ -70,3 +70,17 @@ nav li a:hover {
   padding: 5px;
   border-radius: 8px;
 }
+.details_button {
+  display: inline-block;
+  padding: 1em 2em;
+  margin: 0 0.3em 0.3em 0;
+  border-radius: 8px;
+  background-color: skyblue;
+  text-align: center;
+  transition: all 0.2s;
+  border: 0px solid black;
+  text-decoration: red;
+}
+.details_button:hover {
+  background-color: deepskyblue;
+}
