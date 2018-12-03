@@ -65,10 +65,13 @@ nav li a:hover {
   text-align: center;
 }
 
+.cat_layout a {
+  text-decoration: none;
+}
+
 .cat_box1{
  float: left;
  width: 33.33%;
- 
 }
 
 .cat_box2{
