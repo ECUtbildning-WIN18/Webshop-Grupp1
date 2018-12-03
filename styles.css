@@ -60,7 +60,6 @@ nav li a:hover {
   width: 50%;
   border-radius: 8px;
 }
-<<<<<<< HEAD
 .details_article {
   background-color: rgba(255, 255, 255, 0.315);
   padding: 5px;
@@ -85,36 +84,26 @@ nav li a:hover {
 .details_button:hover {
   background-color: deepskyblue;
 }
-=======
 
 .cat_h1 {
   text-align: center;
 }
 
-.cat_layout{
+.cat_layout {
   text-align: center;
 }
 
-.cat_box1{
- float: left;
- width: 33.33%;
- 
+.cat_box1 {
+  float: left;
+  width: 33.33%;
 }
 
-.cat_box2{
+.cat_box2 {
   float: left;
   width: 33.33%;
- }
+}
 
- .cat_box3{
+.cat_box3 {
   float: left;
   width: 33.33%;
- }
-
-/*-------------------------------My page--------------------------------*/
-
-
-/*-------------------------------/My page end--------------------------------*/
-
- 
->>>>>>> 8151fda6d3a0c3d98b82241498d7cc4ffd944c52
+}
