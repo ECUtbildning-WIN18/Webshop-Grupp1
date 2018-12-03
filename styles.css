@@ -56,3 +56,29 @@ nav li a:hover {
   width: 50%;
   border-radius: 8px;
 }
+
+.cat_h1 {
+  text-align: center;
+}
+
+.cat_layout{
+  text-align: center;
+}
+
+.cat_box1{
+ float: left;
+ width: 33.33%;
+ 
+}
+
+.cat_box2{
+  float: left;
+  width: 33.33%;
+ }
+
+ .cat_box3{
+  float: left;
+  width: 33.33%;
+ }
+
+ 
