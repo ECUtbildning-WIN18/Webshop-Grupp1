@@ -50,39 +50,48 @@ nav li a:hover {
 }
 
 .details_format {
-  padding: 5%;
+  padding: 8px 5%;
   margin: 0px;
 }
 #details_image {
   display: block;
+  margin-top: 8px;
   margin-left: auto;
   margin-right: auto;
   width: 50%;
-  border-radius: 8px;
 }
 .details_article {
   background-color: rgba(255, 255, 255, 0.315);
-  padding: 5px;
-  border-radius: 8px;
+  padding: 8px;
 }
 #details_text {
   background-color: rgba(255, 255, 255, 0.315);
-  padding: 5px;
-  border-radius: 8px;
+  padding: 8px;
 }
 .details_button {
   display: inline-block;
   padding: 1em 2em;
-  margin: 0 0.3em 0.3em 0;
-  border-radius: 8px;
+  border-radius: 2px;
   background-color: skyblue;
   text-align: center;
   transition: all 0.2s;
   border: 0px solid black;
   text-decoration: red;
+  width: 100px;
 }
 .details_button:hover {
   background-color: deepskyblue;
+  padding: 1em 2em;
+  width: 100px;
+}
+#details_h3 {
+  padding: 0 8px;
+  margin: 8px 0;
+}
+#details_h2 {
+  background-color: deeppink;
+  margin: 0px;
+  padding: 8px;
 }
 
 .cat_h1 {

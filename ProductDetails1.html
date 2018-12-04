@@ -20,14 +20,14 @@
       </header>
       <article class="details_format">
         <div class="details_article">
-          <section><h2>Product Details</h2></section>
+          <section><h2 id="details_h2">Product Details</h2></section>
           <img
             id="details_image"
             src="image/Details_Donkey1.jpg"
             alt="A hairy ass!"
           />
 
-          <section><h3>The ass!</h3></section>
+          <section><h3 id="details_h3">The ass!</h3></section>
           <section id="details_text">
             <p>
               A realy nice ass, gray and white and smells like a ass should do!
@@ -41,9 +41,16 @@
               ass are usually larger than other ass.
             </p>
             <p>Price: 100000$</p>
-            <div class="details_format">
+            <div>
               <a class="details_button" href="productpage.html">Buy!</a>
-              <a class="details_button" href="productpage.html">Back</a>
+              <a
+                class="details_button"
+                href="productpage.html"
+                onmouseover="this.innerHTML='Buy!';"
+                onmouseout="this.innerHTML='Go Back';"
+              >
+                Go Back</a
+              >
             </div>
           </section>
         </div>
