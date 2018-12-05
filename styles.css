@@ -51,7 +51,8 @@ nav li a {
   color: navy;
 }
 
-nav li a:hover, .active-page {
+nav li a:hover,
+.active-page {
   margin-top: -2px;
   border-top: 2px solid black;
   background: deepskyblue;
@@ -88,31 +89,27 @@ footer p {
 /*-----------------------------MY PAGE---------------------------------------*/
 
 .btn:link,
-.btn:visited
-{
+.btn:visited {
   background-color: #6c6c6c;
   border: 1px solid #6c6c6c;
   color: #fff;
   margin-right: 15px;
-  
+
   display: inline-block;
   padding: 20px 30px; /*this will mean that we have 10 pixels of heading on top and bottom and 30 pixels left and right*/
   font-weight: 300;
   text-decoration: none;
-  
+
   /*Det här gör att bakgrunden inte byter färg direkt utan på 0.2 sekunder*/
   transition: background-color 0.2s, border 0.2s, color 0.2s;
 }
 
 .btn:hover,
-.btn:active
-{
+.btn:active {
   background-color: #535353;
 }
 
-
-.Mypage_welcome-text-box
-{
+.Mypage_welcome-text-box {
   position: absolute;
   width: 1140px;
   top: 50%;
@@ -120,31 +117,26 @@ footer p {
   transform: translate(-50%, -50%);
 }
 
-
-.Mypage_welcome-header
-{
-  background-image: linear-gradient(rgba(135, 206, 235, 0.7), rgba(135, 206, 235, 0.7)), url(gold-glitter-blog-header.jpg);
+.Mypage_welcome-header {
+  background-image: linear-gradient(
+      rgba(135, 206, 235, 0.7),
+      rgba(135, 206, 235, 0.7)
+    ),
+    url(gold-glitter-blog-header.jpg);
   background-size: cover;
   background-position: center;
   height: 100vh; /*Det här betyder att det är 100 procent av view-port:en*/
 }
 
-
-.Mypage_welcome-header h2
-{
+.Mypage_welcome-header h2 {
   padding-top: 20px;
   font-size: 25px;
 }
 
-
-
 /*-----------------------------MY PAGE end---------------------------------------*/
 
-
-
 /*-----------------------------Log in page---------------------------------------*/
-.Loginpage_Login
-{
+.Loginpage_Login {
   background-color: skyblue;
   width: 300px;
   height: 150px;
@@ -199,14 +191,16 @@ footer p {
   align-items: center;
 }
 
-.content-box-category a, p, img {
+.content-box-category a,
+p,
+img {
   text-align: center;
 }
 
 .cat_box {
   width: 31.2%;
   box-sizing: border-box;
-  text-align: center;/*THIS CENTERs THE IMAGES, IDK WHY LOL*/
+  text-align: center; /*THIS CENTERs THE IMAGES, IDK WHY LOL*/
   padding: 10px;
   margin: 10px;
   background-color: deeppink;
@@ -226,96 +220,96 @@ footer p {
   margin-left: auto;
   margin-right: auto;
   width: 50%;
-  border-radius: 8px;
 }
 .details_article {
-  background-color: rgba(255, 255, 255, 0.315);
+  background-color: deeppink;
   padding: 5px;
-  border-radius: 8px;
 }
 #details_text {
   background-color: rgba(255, 255, 255, 0.315);
   padding: 5px;
-  border-radius: 8px;
 }
 /*end of stefan b's stuff*/
 
 /* ---------------- product page start ------------------ */
 
 .content-box-product {
-    height: 100%;
-    padding: 10px;
-    margin: 0.5em;
-    display: flex;
-    flex-direction: column;
-  }
+  height: 100%;
+  padding: 10px;
+  margin: 0.5em;
+  display: flex;
+  flex-direction: column;
+}
 
-  .content-box-product h2 {
-    text-align: center;
-  }
-  
-  .product-wrapper {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-  }
-  
-  .content-box-product a, p, img {
-    text-align: center;
-  }
+.content-box-product h2 {
+  text-align: center;
+}
 
-  .product-wrapper a {
-    text-decoration: none;
-  }
+.product-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
 
-  .prod-container {
-    width: 31.2%;
-    box-sizing: border-box;
-    text-align: center;
-    padding: 10px;
-    margin: 10px;
-    background-color: deeppink;
-  }
+.content-box-product a,
+p,
+img {
+  text-align: center;
+}
 
+.product-wrapper a {
+  text-decoration: none;
+}
 
-  .pp_dropbtn {
-    background-color: darkturquoise;
-    color: white;
-    padding: 16px;
-    font-size: 16px;
-    border: none;
-    cursor: pointer;
+.prod-container {
+  width: 31.2%;
+  box-sizing: border-box;
+  text-align: center;
+  padding: 10px;
+  margin: 10px;
+  background-color: deeppink;
+}
+
+.pp_dropbtn {
+  background-color: darkturquoise;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
 }
 
 .pp_dropdown {
-    position: relative;
-    display: inline-block;
+  position: relative;
+  display: inline-block;
 }
 
 .pp_dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #f9f9f9;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
 }
 
 .pp_dropdown-content a {
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
 }
 
-.pp_dropdown-content a:hover {background-color: deepskyblue}
+.pp_dropdown-content a:hover {
+  background-color: deepskyblue;
+}
 
 .pp_dropdown:hover .pp_dropdown-content {
-    display: block;
+  display: block;
 }
 
 .pp_dropdown:hover .pp_dropbtn {
-    background-color: deepskyblue;
+  background-color: deepskyblue;
 }
 
 /* ---------------- product page end------------------ */
