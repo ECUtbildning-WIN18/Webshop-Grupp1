@@ -73,53 +73,36 @@ nav li a:hover {
 
 /*-----------------------------MY PAGE---------------------------------------*/
 
-.btn:link,
-.btn:visited
-{
-    background-color: #6c6c6c;
-    border: 1px solid #6c6c6c;
-    color: #fff;
-    margin-right: 15px;
-    
-    display: inline-block;
-    padding: 20px 30px; /*this will mean that we have 10 pixels of heading on top and bottom and 30 pixels left and right*/
-    font-weight: 300;
-    text-decoration: none;
-    
-    /*Det här gör att bakgrunden inte byter färg direkt utan på 0.2 sekunder*/
-    transition: background-color 0.2s, border 0.2s, color 0.2s;
-}
 
-.btn:hover,
-.btn:active
+#Mypage_ul 
 {
-    background-color: #535353;
-}
-
-
-.Mypage_welcome-text-box
-{
-    position: absolute;
-    width: 1140px;
-    top: 50%;
-    left: 75%;
-    transform: translate(-50%, -50%);
+  list-style-type: none;
+  padding: 0;   
 }
 
 
 .Mypage_welcome-header
 {
-    background-image: linear-gradient(rgba(135, 206, 235, 0.7), rgba(135, 206, 235, 0.7)), url(gold-glitter-blog-header.jpg);
-    background-size: cover;
-    background-position: center;
-    height: 100vh; /*Det här betyder att det är 100 procent av view-port:en*/
+    margin-top: 20px;
+    float: left;
+    padding: 10px;
+    height: 400px;
+    background-color: skyblue;
 }
 
 
 .Mypage_welcome-header h2
 {
-    padding-top: 20px;
+    padding-top: opx;
     font-size: 25px;
+}
+
+
+.img img
+{
+    display: inline-block;
+    float: left;
+    border-radius: 200px;
 }
 
 
