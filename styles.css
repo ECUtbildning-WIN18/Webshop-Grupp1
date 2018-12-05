@@ -169,45 +169,6 @@ footer p {
   background-color: deepskyblue;
 }
 
-/*stuff ryan added*/
-.content-box-category {
-  height: 100%;
-  padding: 10px;
-  margin: 0.5em;
-  display: flex;
-  flex-direction: column;
-}
-
-.content-box-category h2 {
-  text-align: center;
-}
-
-.cat_h1 {
-  text-align: center;
-}
-
-.cat_layout {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-}
-
-.content-box-category a,
-p,
-img {
-  text-align: center;
-}
-
-.cat_box {
-  width: 31.2%;
-  box-sizing: border-box;
-  text-align: center; /*THIS CENTERs THE IMAGES, IDK WHY LOL*/
-  padding: 10px;
-  margin: 10px;
-  background-color: deeppink;
-}
-/*end of stuff ryan added*/
-
 .cat_layout a {
   text-decoration: none;
 }
