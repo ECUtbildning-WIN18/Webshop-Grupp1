@@ -1,22 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="stylesheet" type="text/css" href="styles.css" />
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="styles.css">
     <title>Grupparbete</title>
-  </head>
-  <body>
-    <div class="container">
-      <header>
-        <h1>Web shop!</h1>
-        <nav>
-          <ul>
+</head>
+<body>
+<div class="container">
+<header>
+    <h1>Web shop!</h1>
+    <nav>
+        <ul>
             <li><a href="index.html">Home</a></li>
-            <li><a href="category.html">Categories</a></li>
-            <li><a href="mypage.html">My Page</a></li>
-          </ul>
-        </nav>
-      </header>
-    </div>
-  </body>
+            <li><a class="active-page" href="productpage.html">Products</a></li>
+            <li><a href="LoginPage.html">My Page</a></li>
+        </ul>
+    </nav>
+</header>
+<section class = "content-box-product">
+    <h2 id="pp_header" >Donkeys</h2>
+    <section class = "product-wrapper">
+        <div class = "prod-container"> 
+            <p><a href="Productdetails.html">Regular donkeys</a></p>
+            <a href="Productdetails.html"><img src="image\pp_donkey-transparent.png" width="160" height="120" title="" alt="Donkey"></a>
+            <div class="pp_dropdown">
+                <button class="pp_dropbtn">Models</button>
+                <div class="pp_dropdown-content">
+                    <a href="ProductDetails1.html">The ass!</a>
+                    <a href="ProductDetails2.html">Norman donkey</a>
+                    <a href="ProductDetails3.html">Sardinian Donkey</a>
+                </div>
+            </div>
+        </div>
+    
+        <div class = "prod-container">
+            <p><a href="">Donkey foals</a></p>         
+            <a href=""><img src="image\pp_donkeyfoal-transparent.png" width="160" height="120" title="" alt="Donkey foal"></a>
+            <div class="pp_dropdown">
+                <button class="pp_dropbtn">Age</button>
+                <div class="pp_dropdown-content">
+                    <a href="#">Newborn</a>
+                    <a href="#">Dumbass teenager</a>
+                    <a href="#">Smartass teenager</a>
+                </div>
+            </div>
+        </div>
+    
+        <div class = "prod-container">
+            <p><a href="">Fluffy donkeys</a></p>
+            <a href=""><img src="image\pp_eyeore-transparent.png" width="160" height="120" title="" alt="Donkey toy"></a>
+            <div class="pp_dropdown">
+                <button class="pp_dropbtn">Type</button>
+                <div class="pp_dropdown-content">
+                    <a href="#">Eyeore</a>
+                    <a href="#">Shrek donkey</a>
+                </div>
+            </div>
+        </div>
+    </section>
+</section>
+
+<footer>
+    <p>This is the footer</p>
+</footer>
+</div>
+</body>
 </html>

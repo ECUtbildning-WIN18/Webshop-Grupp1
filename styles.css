@@ -1,73 +1,68 @@
 @import url("https://fonts.googleapis.com/css?family=Ubuntu|Spectral");
 
 body {
+  background-color: honeydew;
 }
 
 .container {
   max-width: 1024px;
-  min-height: 600px;
-  margin: 10px auto 0 auto;
+  min-height: 100px;
+  margin: 5px auto 0 auto;
+  padding-top: 15px;
+  padding-bottom: 15px;
   background: cornflowerblue;
 }
 
 header {
+  margin: 0 -25px;
+  box-shadow: 5px 5px honeydew;
 }
 
 header h1 {
-  font-family: "Spectral", serif;
+  font-family: "Spectral", sans-serif;
   background: deeppink;
   margin: 0 auto;
-  text-align: center;
+  padding-right: 10px;
+  text-align: right;
 }
 
 nav {
-  width: 100%;
   display: flex;
-  flex-flow: row wrap;
   justify-content: flex-start;
-  background: skyblue;
+  box-sizing: border-box;
+  background: darkturquoise;
 }
 
 nav ul {
   list-style-type: none;
+  margin: 0;
 }
 
 nav li {
   float: left;
+  padding: 0 5px;
 }
 
 nav li a {
-  font-family: "Spectral", serif;
-  padding: 1em;
-  margin: auto;
+  font-family: "Ubuntu", sans-serif;
+  padding: 14px 16px;
   text-decoration: none;
   display: block;
   color: navy;
 }
 
-nav li a:hover {
+nav li a:hover, .active-page {
+  margin-top: -2px;
+  border-top: 2px solid black;
   background: deepskyblue;
 }
 
-.details_format {
-  padding: 8px 5%;
-  margin: 0px;
+
 }
-#details_image {
-  display: block;
-  margin-top: 8px;
-  margin-left: auto;
-  margin-right: auto;
-  width: 50%;
-}
-.details_article {
-  background-color: rgba(255, 255, 255, 0.315);
-  padding: 8px;
-}
-#details_text {
-  background-color: rgba(255, 255, 255, 0.315);
-  padding: 8px;
-}
+
+/*-----------------------------Log in page end---------------------------------------*/
+
+/*stefan b's stuff*/
 .details_button {
   display: inline-block;
   padding: 1em 2em;
@@ -94,25 +89,146 @@ nav li a:hover {
   padding: 8px;
 }
 
+/*stuff ryan added*/
+.content-box-category {
+  height: 100%;
+  padding: 10px;
+  margin: 0.5em;
+  display: flex;
+  flex-direction: column;
+}
+
+.content-box-category h2 {
+  text-align: center;
+}
+
 .cat_h1 {
   text-align: center;
 }
 
 .cat_layout {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.content-box-category a, p, img {
   text-align: center;
 }
 
-.cat_box1 {
-  float: left;
-  width: 33.33%;
+.cat_box {
+  width: 31.2%;
+  box-sizing: border-box;
+  text-align: center;/*THIS CENTERs THE IMAGES, IDK WHY LOL*/
+  padding: 10px;
+  margin: 10px;
+  background-color: deeppink;
+}
+/*end of stuff ryan added*/
+
+.cat_layout a {
+  text-decoration: none;
 }
 
-.cat_box2 {
-  float: left;
-  width: 33.33%;
+.details_format {
+  padding: 5%;
+  margin: 0px;
+}
+#details_image {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  border-radius: 8px;
+}
+.details_article {
+  background-color: rgba(255, 255, 255, 0.315);
+  padding: 5px;
+  border-radius: 8px;
+}
+#details_text {
+  background-color: rgba(255, 255, 255, 0.315);
+  padding: 5px;
+  border-radius: 8px;
+}
+/*end of stefan b's stuff*/
+
+/* ---------------- product page start ------------------ */
+
+.content-box-product {
+    height: 100%;
+    padding: 10px;
+    margin: 0.5em;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .content-box-product h2 {
+    text-align: center;
+  }
+  
+  .product-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+  
+  .content-box-product a, p, img {
+    text-align: center;
+  }
+
+  .product-wrapper a {
+    text-decoration: none;
+  }
+
+  .prod-container {
+    width: 31.2%;
+    box-sizing: border-box;
+    text-align: center;
+    padding: 10px;
+    margin: 10px;
+    background-color: deeppink;
+  }
+
+
+  .pp_dropbtn {
+    background-color: darkturquoise;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
 }
 
-.cat_box3 {
-  float: left;
-  width: 33.33%;
+.pp_dropdown {
+    position: relative;
+    display: inline-block;
 }
+
+.pp_dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.pp_dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.pp_dropdown-content a:hover {background-color: deepskyblue}
+
+.pp_dropdown:hover .pp_dropdown-content {
+    display: block;
+}
+
+.pp_dropdown:hover .pp_dropbtn {
+    background-color: deepskyblue;
+}
+
+/* ---------------- product page end------------------ */
