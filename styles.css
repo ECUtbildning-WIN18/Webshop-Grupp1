@@ -1,7 +1,16 @@
 @import url("https://fonts.googleapis.com/css?family=Ubuntu|Spectral");
 
+:root {
+  --dark-color: #535353;
+  --medium-color: #6c6c6c;
+  --light-color: #f9f9f9;
+  --btn-color: #8f6d3b;
+  --btn-hover-color: #ca923d;
+}
+
 body {
   background-color: honeydew;
+  color: #f9f9f9;
 }
 
 .container {
@@ -10,17 +19,17 @@ body {
   margin: 5px auto 0 auto;
   padding-top: 15px;
   padding-bottom: 15px;
-  background: cornflowerblue;
+  background: var(--light-color);
 }
 
 header {
   margin: 0 -25px;
-  box-shadow: 5px 5px honeydew;
+  box-shadow: 5px 5px var(--dark-color);
 }
 
 header h1 {
   font-family: "Spectral", sans-serif;
-  background: deeppink;
+  background: var(--dark-color);
   margin: 0 auto;
   padding-right: 10px;
   text-align: right;
@@ -30,7 +39,7 @@ nav {
   display: flex;
   justify-content: flex-start;
   box-sizing: border-box;
-  background: darkturquoise;
+  background: var(--btn-color);
 }
 
 nav ul {
@@ -48,14 +57,14 @@ nav li a {
   padding: 14px 16px;
   text-decoration: none;
   display: block;
-  color: navy;
+  color: var(--light-color);
 }
 
 nav li a:hover,
 .active-page {
-  margin-top: -2px;
-  border-top: 2px solid black;
-  background: deepskyblue;
+  margin-top: -4px;
+  border-top: 4px solid var(--btn-hover-color);
+  background: var(--btn-hover-color);
 }
 
 .content-box {
@@ -68,14 +77,14 @@ nav li a:hover,
 }
 
 .dummy-content {
-  background-color: black;
+  background-color: var(--medium-color);
   width: 75px;
   height: 75px;
   margin: 5px;
 }
 
 footer {
-  background: deeppink;
+  background: var(--dark-color);
   font-family: "Ubuntu", sans-serif;
   height: 49px;
   margin: 0 -25px;
@@ -137,10 +146,10 @@ footer p {
 
 /*-----------------------------Log in page---------------------------------------*/
 .Loginpage_Login {
-  background-color: skyblue;
+  background-color: var(--medium-color);
   width: 300px;
   height: 150px;
-  border: 1px solid blue;
+  border: 1px solid var(--dark-color);
   margin: auto;
   margin-top: 40px;
   padding: 10px;
@@ -154,11 +163,12 @@ footer p {
 
 /*stefan b's stuff*/
 .details_button {
+  color: var(--light-color);
   display: inline-block;
   padding: 1em 2em;
   margin: 0 0.3em 0.3em 0;
   border-radius: 2px;
-  background-color: darkturquoise;
+  background-color: var(--btn-color);
   text-align: center;
   transition: all 0.2s;
   border: 0px solid black;
@@ -166,7 +176,7 @@ footer p {
   width: 100px;
 }
 .details_button:hover {
-  background-color: deepskyblue;
+  background-color: var(--btn-hover-color);
 }
 
 /*stuff ryan added*/
@@ -196,6 +206,7 @@ footer p {
 p,
 img {
   text-align: center;
+  color: var(--light-color);
 }
 
 .cat_box {
@@ -204,7 +215,7 @@ img {
   text-align: center; /*THIS CENTERs THE IMAGES, IDK WHY LOL*/
   padding: 10px;
   margin: 10px;
-  background-color: deeppink;
+  background-color: var(--medium-color);
 }
 /*end of stuff ryan added*/
 
@@ -223,7 +234,7 @@ img {
   width: 50%;
 }
 .details_article {
-  background-color: deeppink;
+  background-color: var(--medium-color);
   padding: 5px;
 }
 #details_text {
@@ -260,6 +271,7 @@ img {
 
 .product-wrapper a {
   text-decoration: none;
+  color: var(--light-color);
 }
 
 .prod-container {
@@ -268,11 +280,11 @@ img {
   text-align: center;
   padding: 10px;
   margin: 10px;
-  background-color: deeppink;
+  background-color: var(--medium-color);
 }
 
 .pp_dropbtn {
-  background-color: darkturquoise;
+  background-color: var(--btn-color);
   color: white;
   padding: 16px;
   font-size: 16px;
@@ -302,7 +314,7 @@ img {
 }
 
 .pp_dropdown-content a:hover {
-  background-color: deepskyblue;
+  background-color: var(--btn-hover-color);
 }
 
 .pp_dropdown:hover .pp_dropdown-content {
@@ -310,7 +322,7 @@ img {
 }
 
 .pp_dropdown:hover .pp_dropbtn {
-  background-color: deepskyblue;
+  background-color: var(--btn-hover-color);
 }
 
 /* ---------------- product page end------------------ */
