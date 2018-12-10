@@ -9,7 +9,7 @@
 }
 
 body {
-  background-color: honeydew;
+  background-color: var(--light-color);
   color: #f9f9f9;
 }
 
