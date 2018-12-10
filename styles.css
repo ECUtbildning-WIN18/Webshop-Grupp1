@@ -4,7 +4,7 @@ body {
   background-color: honeydew;
 }
 
-.container {
+.flex-wrapper {
   max-width: 1024px;
   min-height: 100px;
   margin: 5px auto 0 auto;
@@ -95,7 +95,6 @@ footer p {
   color: #fff;
   margin-right: 15px;
 
-  display: inline-block;
   padding: 20px 30px; /*this will mean that we have 10 pixels of heading on top and bottom and 30 pixels left and right*/
   font-weight: 300;
   text-decoration: none;
@@ -109,15 +108,31 @@ footer p {
   background-color: #535353;
 }
 
-.Mypage_welcome-text-box {
-  position: absolute;
-  width: 1140px;
-  top: 50%;
-  left: 75%;
-  transform: translate(-50%, -50%);
+.btn {
+  height: 25px;
+  justify-self: right;
 }
 
-.Mypage_welcome-header {
+.flexmeme1 {
+  width: 100%;
+  height: 80%;
+  display: flex;
+  justify-content: center;
+}
+
+.flexmeme2 {
+  width: 100%;
+  height: 10%;
+  display: flex;
+  align-content: flex-end;
+  justify-content: right;
+}
+
+.mypage-container {
+  display: flex;
+  flex-flow: row wrap;
+  box-sizing: border-box;
+  margin: 18px 15px 15px 15px;
   background-image: linear-gradient(
       rgba(135, 206, 235, 0.7),
       rgba(135, 206, 235, 0.7)
@@ -125,12 +140,11 @@ footer p {
     url(gold-glitter-blog-header.jpg);
   background-size: cover;
   background-position: center;
-  height: 100vh; /*Det här betyder att det är 100 procent av view-port:en*/
+  height: 600px;
 }
 
-.Mypage_welcome-header h2 {
-  padding-top: 20px;
-  font-size: 25px;
+.mypage-container h2 {
+  height: 30px;
 }
 
 /*-----------------------------MY PAGE end---------------------------------------*/
@@ -150,6 +164,24 @@ footer p {
   text-align: center;
 }
 
+.login-btn:link,
+.login-btn:visited {
+  background-color: #6c6c6c;
+  border: 1px solid #6c6c6c;
+  color: #fff;
+
+  padding: 10px 15px; /*this will mean that we have 10 pixels of heading on top and bottom and 30 pixels left and right*/
+  font-weight: 300;
+  text-decoration: none;
+
+  /*Det här gör att bakgrunden inte byter färg direkt utan på 0.2 sekunder*/
+  transition: background-color 0.2s, border 0.2s, color 0.2s;
+}
+
+.login-btn:hover,
+.login-btn:active {
+  background-color: #535353;
+}
 /*-----------------------------Log in page end---------------------------------------*/
 
 /*stefan b's stuff*/
