@@ -58,7 +58,8 @@ nav li a:hover,
   background: deepskyblue;
 }
 
-.content-box {
+.content {
+  font-family: "Ubuntu", sans-serif;
   height: 100%;
   padding: 10px;
   margin: 0.5em;
@@ -67,11 +68,25 @@ nav li a:hover,
   flex-flow: row wrap;
 }
 
-.dummy-content {
-  background-color: black;
-  width: 75px;
-  height: 75px;
-  margin: 5px;
+.content-side {
+  height: 600px;
+  width: 30%;
+  background: lightblue;
+}
+
+.content-main {
+  height: 600px;
+  width: 68%;
+  margin-left: 5px;
+  padding: 0 4px;
+  background: lightblue;
+}
+
+.dummy-img {
+  height: 150px;
+  margin: 10px;
+  width: auto;
+  background: whitesmoke;
 }
 
 footer {
